@@ -19,8 +19,10 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 .flower__message {
+  font-family: 'Yomogi', sans-serif;
   position: absolute;
   top: 10%;
   left: 50%;
