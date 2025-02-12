@@ -20,6 +20,40 @@ body {
   perspective: 1000px;
 }
 
+.flower__message {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+  animation: glow 1.5s infinite alternate, fadeIn 2s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff9900;
+  }
+  100% {
+      text-shadow: 0 0 15px #ffcc00, 0 0 25px #ff9900, 0 0 35px #ff6600;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate(-50%, -20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(-50%);
+  }
+}
+
+
 .night {
   position: fixed;
   left: 50%;
